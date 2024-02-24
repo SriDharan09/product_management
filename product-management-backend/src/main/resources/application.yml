@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    username: root
+    url: jdbc:mysql://localhost:3306/user_management
+    password: 1234
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+      hbm2ddl:
+        auto: create
